@@ -17,11 +17,11 @@ namespace OpenRPA
         public Dictionary<string, object> properties { get { return GetProperty(null, new Dictionary<string, object>()); } set { SetProperty(null, value); } }
         public string wsurl { get { return GetProperty(null, "wss://app.openiap.io/"); } set { SetProperty(null, value); } }
         //It will not open browser page for login if setted true and username/password (or unsafepassword) not null. Think about that username/password was provided and nobody could handle the browser login operation at the moment.
-        public bool noweblogin { get { return GetProperty(null, false); } set { SetProperty(null, value); } }
+        public bool noweblogin { get { return GetProperty(null, true); } set { SetProperty(null, value); } }
         public string username { get { return GetProperty(null, ""); } set { SetProperty(null, value); } }
         public byte[] jwt { get { return GetProperty<byte[]>(null, null); } set { SetProperty(null, value); } }
         public byte[] password { get { return GetProperty<byte[]>(null, null); } set { SetProperty(null, value); } }
-        public string unsafepassword { get { return GetProperty<string>(null, null); } set { SetProperty(null, value); } }
+        public string unsafepassword { get { return GetProperty<string>(null, ""); } set { SetProperty(null, value); } }
         public byte[] entropy { get { return GetProperty<byte[]>(null, null); } set { SetProperty(null, value); } }
         public string cancelkey { get { return GetProperty(null, "{ESCAPE}"); } set { SetProperty(null, value); } }
         public bool isagent { get { return GetProperty(null, false); } set { SetProperty(null, value); } }
@@ -137,7 +137,7 @@ namespace OpenRPA
 
                 if (System.IO.File.Exists(System.IO.Path.Combine(AppDataOpenRPA, "settings.json")))
                 {
-                    filename = System.IO.Path.Combine(Extensions.ProjectsDirectory, "settings.json");
+                    filename = System.IO.Path.Combine(Interfaces.Extensions.ProjectsDirectory, "settings.json");
                 } else if (System.IO.File.Exists(System.IO.Path.Combine(MyDocumentsOpenRPA, "settings.json")))
                 {
                     filename = System.IO.Path.Combine(MyDocumentsOpenRPA, "settings.json");
@@ -192,7 +192,7 @@ namespace OpenRPA
         {
             try
             {
-                _local.Save(System.IO.Path.Combine(Extensions.ProjectsDirectory, "settings.json"));
+                _local.Save(System.IO.Path.Combine(Interfaces.Extensions.ProjectsDirectory, "settings.json"));
             }
             catch (Exception ex)
             {

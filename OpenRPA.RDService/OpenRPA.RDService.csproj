@@ -69,6 +69,8 @@
     <OutputPath />
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="DotNetProjects.Extended.Wpf.Toolkit" Version="5.0.115" />
+    <PackageReference Include="DotNetProjects.WpfToolkit.Input" Version="6.1.94" />
     <PackageReference Include="FreeRDP-Sharp" Version="0.1.0" />
     <PackageReference Include="SimpleImpersonation" Version="4.2.0" />
   </ItemGroup>

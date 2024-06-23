@@ -8,6 +8,7 @@ using OpenRPA.Views;
 using System;
 using System.Activities;
 using System.Activities.Core.Presentation;
+using System.Windows.Controls;
 using System.Activities.Expressions;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -20,7 +21,6 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -3729,7 +3729,7 @@ namespace OpenRPA
             Log.FunctionIndent("MainWindow", "SearchBox_Populating");
             try
             {
-                var text = SearchBox.Text.ToLower();
+                string text = SearchBox.Text.ToLower();
                 var options = new List<QuickLaunchItem>();
                 foreach (var designer in RobotInstance.instance.Designers)
                 {

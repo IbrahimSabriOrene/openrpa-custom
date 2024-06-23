@@ -160,6 +160,7 @@ namespace OpenRPA
         }
         public async Task Purge()
         {
+            await Task.CompletedTask;
             throw new NotImplementedException("This feature has not been implemented, please purge queue from openflow web interface");
             //if (string.IsNullOrEmpty(_id) && global.webSocketClient != null && global.webSocketClient.isConnected)
             //{

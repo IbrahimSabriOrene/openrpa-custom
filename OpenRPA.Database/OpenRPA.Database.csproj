@@ -67,6 +67,8 @@
   <ItemGroup>
 	  <None Include="Resources\database.png" Pack="true" PackagePath="\" />
     <PackageReference Include="DataConnectionDialog" Version="1.2.0" />
+    <PackageReference Include="DotNetProjects.Extended.Wpf.Toolkit" Version="5.0.115" />
+    <PackageReference Include="DotNetProjects.WpfToolkit.Input" Version="6.1.94" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="Activities\DatabaseScopeDesigner.xaml">

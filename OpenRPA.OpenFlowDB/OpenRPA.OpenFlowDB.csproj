@@ -114,9 +114,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DotNetProjects.Wpf.Toolkit" Version="5.0.43" />
-  </ItemGroup>
-  <ItemGroup>
     <Page Include="Activities\AssignOpenFlowDesigner.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -187,6 +184,10 @@
     <Resource Include="Resources\designer\updatefromdatatable.png" />
     <Resource Include="Resources\designer\assignopenflow.png" />
     <EmbeddedResource Include="Resources\toolbox\grantpermission.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DotNetProjects.Extended.Wpf.Toolkit" Version="5.0.115" />
+    <PackageReference Include="DotNetProjects.WpfToolkit.Input" Version="6.1.94" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Resources\strings.Designer.cs">

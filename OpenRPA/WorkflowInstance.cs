@@ -926,6 +926,7 @@ namespace OpenRPA
         private static bool hasRanPending = false;
         public static async Task RunPendingInstances()
         {
+            await Task.CompletedTask;
             if (Config.local.disable_instance_store) return;
             if (hasRanPending) return;
             hasRanPending = true;

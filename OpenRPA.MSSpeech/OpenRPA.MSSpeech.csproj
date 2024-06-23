@@ -32,6 +32,10 @@
     <EmbeddedResource Include="Resources\toolbox\speak.png" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="DotNetProjects.Extended.Wpf.Toolkit" Version="5.0.115" />
+    <PackageReference Include="DotNetProjects.WpfToolkit.Input" Version="6.1.94" />
+  </ItemGroup>
+  <ItemGroup>
     <Page Include="Activities\SpeakDesigner.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

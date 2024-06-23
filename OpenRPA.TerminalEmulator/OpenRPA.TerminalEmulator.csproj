@@ -128,6 +128,10 @@
     <EmbeddedResource Include="Resources\toolbox\sendtext.png" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="DotNetProjects.Extended.Wpf.Toolkit" Version="5.0.115" />
+    <PackageReference Include="DotNetProjects.WpfToolkit.Input" Version="6.1.94" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Update="Resources\strings.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

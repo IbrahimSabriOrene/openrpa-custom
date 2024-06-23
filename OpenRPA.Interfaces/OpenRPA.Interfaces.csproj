@@ -125,6 +125,8 @@
     <EmbeddedResource Include="Resources\searchfound.png" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="DotNetProjects.Extended.Wpf.Toolkit" Version="5.0.115" />
+    <PackageReference Include="DotNetProjects.WpfToolkit.Input" Version="6.1.94" />
     <PackageReference Include="FlaUI.UIA3" Version="3.2.0">
       <IncludeAssets></IncludeAssets>
       <ExcludeAssets></ExcludeAssets>

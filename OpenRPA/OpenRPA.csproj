@@ -64,7 +64,8 @@
 		<None Include="Resources\openrpa.png" Pack="true" PackagePath="\" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="DotNetProjects.Wpf.Toolkit" Version="5.0.43" />
+		<PackageReference Include="DotNetProjects.Extended.Wpf.Toolkit" Version="5.0.115" />
+		<PackageReference Include="DotNetProjects.WpfToolkit.Input" Version="6.1.94" />
 		<PackageReference Include="Extended.Wpf.Toolkit" Version="4.2.0" />
 		<PackageReference Include="Microsoft.Bcl.HashCode" Version="1.1.1" />
 		<PackageReference Include="NuGet.Common" Version="5.11.6" />

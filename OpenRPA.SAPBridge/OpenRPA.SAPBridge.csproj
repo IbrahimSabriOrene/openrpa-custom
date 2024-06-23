@@ -47,6 +47,10 @@
     <EmbeddedResource Include="Resources\Interop.SAPFEWSELib.dll" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="DotNetProjects.Extended.Wpf.Toolkit" Version="5.0.115" />
+    <PackageReference Include="DotNetProjects.WpfToolkit.Input" Version="6.1.94" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\OpenRPA.NamedPipeWrapper\OpenRPA.NamedPipeWrapper.csproj" />
   </ItemGroup>
   <ItemGroup>
